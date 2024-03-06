@@ -1,0 +1,174 @@
+Global Styles
+html, body {
+  height: 100%; /* Ensure the html and body elements take up the full height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header.css */
+
+.App-header {
+  background-color: #B0E0E6;
+  display: flex;
+  flex-direction: column; /* Stack header content vertically */
+  align-items: center; /* Center align the header content */
+  justify-content: center;
+  padding: 20px;
+  position: relative; /* Establishes a positioning context for the taskbar */
+  width: 100%; /* Full width to accommodate centered content and taskbar */
+}
+
+/* Header adjustments on smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Distribute space around items on smaller screens */
+  }
+}
+
+
+/* Taskbar Styles */
+.taskbar {
+  background-color: #B0E0E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  z-index: 1000; /* High z-index to keep it above other content */
+}
+
+.taskbar-button, .taskbar a {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  padding: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.taskbar-button:hover, .taskbar a:hover {
+  background-color: #ffeccc;
+}
+
+/* Link Styles */
+.taskbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.taskbar a:hover {
+  color: black;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #B0E0E6;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Pushes the footer to the bottom of the viewport */
+}
+
+
+/* Global Styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffeccc;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #B0E0E6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row; /* Default layout is horizontal */
+}
+
+/* Adjust header and taskbar layout on smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column; /* Stacks header and taskbar vertically */
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #B0E0E6;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+/* Header.css */
+
+.App-header {
+  background-color: #B0E0E6;
+  display: flex;
+  flex-direction: column; /* Stack header content vertically */
+  align-items: center; /* Center align the header content */
+  padding: 20px;
+  position: relative; /* Establishes a positioning context for the taskbar */
+}
+
+/* Header hover effect - Display taskbar */
+.App-header:hover .taskbar {
+  opacity: 1;
+  visibility: visible; /* Show taskbar on hover */
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: row; /* Horizontal layout on smaller screens */
+    justify-content: space-between; /* Distribute space around items */
+  }
+}
+/* Global Styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffeccc;
+}
+
+/* Header Styles - Assuming .App-header is the class used */
+.App-header {
+  background-color: #B0E0E6;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Context for absolute positioning of taskbar */
+}
+
+/* Adjust layout on smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between;
+  }
+}

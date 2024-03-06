@@ -1,0 +1,15 @@
+@media only screen and (max-width: 480px) {
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .toggle-button {
+      display: block;
+    }
+  }
+  .menu-items.show {
+    display: flex;
+  }
+  

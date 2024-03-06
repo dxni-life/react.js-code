@@ -1,0 +1,18 @@
+.home-page {
+    text-align: center;
+    padding: 20px;
+    flex: 1; /* Allows it to grow and fill available space, ensuring footer sticks to the bottom */
+  }
+  
+  .home-page h1 {
+    font-size: 2.5em;
+    color: #3c763d;
+    margin-bottom: 20px;
+  }
+  
+  .center-image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+  }
